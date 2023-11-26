@@ -24,27 +24,14 @@ int main()
 	//task2();
 	//task2_1();
 	//task3();
-	//task4();
+	task4();
 	//task5();
 	//task5_1();
 	//task6();
-	 //task7();
+	//task7();
 	//task7_1();
-	task8();
-	/*
-	{
-		for (int i = 1; i < 4; i++)
-		{
-			printf(" %d", i );
-			for (int j = 1; j < 4; j++)
-			{
-				printf(" %d", i * j);
-			}
-			printf("\n");
-		}
-	}
+	//task8();
 	
-	*/
 	
 	
 
