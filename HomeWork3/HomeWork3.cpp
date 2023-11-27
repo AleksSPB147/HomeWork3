@@ -25,7 +25,7 @@ int main()
 	//task3();
 	//task4();
 	//task5();
-	//task6();            // Красоту не успел навести
+	task6();            // Красоту не успел навести
 	//task7();
 	//task7_1();
 	//task8();
@@ -271,10 +271,10 @@ void task6()
 {
 	
 
-	for (int i = 1; i <9; i++)
+	for (int i = 1; i <= 9; i++)
 	{
 		
-		for (int j = 1; j < 9; j++)
+		for (int j = 1; j <= 9; j++)
 			
 
 			printf(" %d ", i * j);
