@@ -8,7 +8,6 @@ void task2_1();
 void task3();
 void task4();
 void task5();
-void task5_1();
 void task6();
 void task7();
 void task7_1();
@@ -24,25 +23,14 @@ int main()
 	//task2();
 	//task2_1();
 	//task3();
-	task4();
+	//task4();
 	//task5();
-	//task5_1();
-	//task6();
+	//task6();            // Красоту не успел навести
 	//task7();
 	//task7_1();
 	//task8();
 	
-	
-	
-
-
-
-
-
-
-
-
-}
+	}
 // *******************************************************************************************
 /*
 Напишите программу, которая запрашивает оценку (2,3,4,5)
@@ -54,7 +42,7 @@ int main()
 void task1()
 {
 	int eval;
-	printf("Введите оценку \n");
+	printf("Введите оценку: ");
 	scanf_s("%d",& eval);
 	if (eval == 2)
 	{
@@ -98,6 +86,7 @@ void task1_1()
 		break;
 	case 5:
 		printf("Отлично");
+		break;
 	default:
 		printf("Error");
 		break;
@@ -234,7 +223,7 @@ void task3()
 void task4()
 {
 	int a = 1, b = 1;
-	for (int i = 1; i < 10; i++)
+	for (int i = 1; i <= 10; i++)
 	{
 		printf("%d \n", b);
 		a = a +b;
@@ -265,9 +254,6 @@ void task5()
 
 }
 
-void task5_1()
-{
-}
 
 
 
@@ -328,15 +314,17 @@ void task7_1()
 {
 
 	int num;
-	printf("Введите число");
+	printf("Введите число: ");
 	scanf_s("%d", &num);
 	int i;
-	for (int i = 1; i < num; i++)
+	for (int i = 1; i <= num; i++)
 	{
 		if (num%i == 0)                             // Проверяем на деление без остатка
 		{
-			printf("%d", i);
+			printf("%d\n", i);
+			
 		}
+		
     }
 }
 //************************************************************	
@@ -347,12 +335,12 @@ void task7_1()
 */
 void task8()
 {
-	int num,min = 0, q = 0;
+	int num,min = 0, q ;
 	printf("Введите число: ");
 	scanf_s("%d", &num);
 	printf("Введите %d целых чисел: \n", num);
 	scanf_s("%d", &q);
-
+	
 	min = q;
 
 	for (int i = 0; i < num -1 ; i++)
